@@ -1,0 +1,97 @@
+<html lang="en">
+    <head>
+        <title>Marios Kiatos</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="Marios Kiatos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="style.css?cache=7733391418498779688">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="section">
+                <div class="myname"><a href="https://mkiatos.github.io/">Marios Kiatos</a></div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="https://mkiatos.github.io">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://mkiatos.github.io/publications">Publications</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <!-- start publication list --><div class="row paper"><div class="image"><img src="images/dqn_image_header" alt="Robust object grasping in clutter via singulation" /></div><div class="content"><div class="paper-title"><a href="https://robot-clutter.github.io/dqn">Robust object grasping in clutter via singulation</a></div><div class="conference">IEEE International Conference on Robotics and Automation (2019)</div><div class="authors"><strong class="author">Marios Kiatos</strong>, <a class="author">Sotiris Malassiotis</a> <a href="#" data-type="Abstract" data-index="0">Abstract</a> <a href="https://robot-clutter.github.io/dqn" data-type="Project page">Project page</a> <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8793972" data-type="Paper">Paper</a> <a href="data/ICRA2019-poster.pdf" data-type="Poster">Poster</a> <a href="" data-type="Code">Code</a> <a href="https://www.youtube.com/watch?v=nj2FxaUCA5c" data-type="Video">Video</a> <a href="#" data-type="Bibtex" data-index="7">Bibtex</a><div class="link-content" data-index="0">Grasping objects in a cluttered environment is challenging due to the lack of collision free grasp affordances. In such conditions, the target object touches or is covered by other objects in the scene, resulting in a failed grasp. To address this problem, we propose a strategy of singulating the object from its surrounding clutter, which consists of previously unseen objects, by means of lateral pushing movements. We employ reinforcement learning for obtaining optimal push policies given depth observations of the scene. The action-value function(Q-function) is approximated with a deep neural network. We train the robot in simulation and we demonstrate that the transfer of learned policies to the real environment is robust.</div><div class="link-content" data-index="7"><pre>@inproceedings{singulation19,
+author={M. {Kiatos} and S. {Malassiotis}},
+booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+title={Robust object grasping in clutter via singulation},
+year={2019},
+volume={},
+number={},
+pages={1596-1600},
+doi={10.1109/ICRA.2019.8793972}}
+</pre></div></div></div></div><!-- end publication list -->
+
+        <!-- Javascript for showing and hiding the abstract and bibtex -->
+        <script type="text/javascript">
+            document.querySelectorAll(".links").forEach(function (p) {
+                p.addEventListener("click", function (ev) {
+                    // Make sure that the click is coming from a link
+                    if (ev.target.nodeName != "A") {
+                        return;
+                    }
+
+                    // Find the index of the div to toggle or return
+                    var i = ev.target.dataset["index"];
+                    if (i == undefined) {
+                        return;
+                    }
+
+                    // Make sure to remove something else that was displayed
+                    // and toggle the current one
+                    Array.prototype.forEach.call(
+                        ev.target.parentNode.children,
+                        function (sibling) {
+                            // We don't care about links etc
+                            if (sibling.nodeName != "DIV") {
+                                return;
+                            }
+
+                            // Hide others
+                            if (sibling.dataset["index"] != i) {
+                                sibling.style.display = "none";
+                            }
+
+                            // toggle the correct one
+                            else {
+                                if (sibling.style.display != "block") {
+                                    sibling.style.display = "block";
+                                } else {
+                                    sibling.style.display = "none";
+                                }
+                            }
+                        }
+                    );
+                    ev.preventDefault();
+                });
+            });
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143288088-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-143288088-1');
+        </script>
+    </body>
+</html>
