@@ -109,23 +109,30 @@ a {
 .paper .links a:first-child { margin-left: 0px; }
 .paper .links a {
     display: inline-block;
-    width: 70px;
+    /* width: 70px; */
     margin-right: 5px;
     margin-bottom:10px;
-    border-radius: 5px;
+    /* text-decoration: underline; */
+    /* border-radius: 5px;
     padding: 1px 6px;
-    background-color: #0081af;
-    color: white;
+    background-color: #0081af; */
+    color: rgb(0, 174, 255);
     font-weight: bold;
     text-align: center;
 }
+
+.paper .links .seperator {
+    color: rgb(0, 174, 255);
+    margin-left: 0px;
+    margin-right:5px;
+}
 .paper .links a:hover {
-    pointer: cursor;
+    cursor: pointer;
     color: #1A2B7E;
     font-weight: bold;
 }
 
-.paper .links a[data-type="Abstract"] {
+/* .paper .links a[data-type="Abstract"] {
     background-color: #f0ad4e;
 }
 .paper .links a[data-type="Project page"] {
@@ -136,7 +143,7 @@ a {
     background-color: #4a5759;
 }
 .paper .links a[data-type="Code"] {
-    
+
 }
 .paper .links a[data-type="Blog"] {
     background-color: #06d6a0;
@@ -155,7 +162,8 @@ a {
 }
 .paper .links a[data-type="Bibtex"] {
     background-color: #0081af;
-}
+} */
+
 .paper .links .link-content {
     display: none;
     font-style: italic;
