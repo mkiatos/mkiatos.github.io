@@ -100,8 +100,9 @@ a {
  */
 .paper-title {
     padding-top: 2.5%;
-    font-size: 11pt;
+    font-size: 14pt;
     color: #818181;
+    font-weight: bold;
 }
 .paper-title a {color: #000;}
 .paper-title a:hover {color: #777;}
